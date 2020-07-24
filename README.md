@@ -2,7 +2,7 @@
 
 ## 라이브러리 가져오기 (Import library)
 라이브러리는 특정 명령 수행에 필요한 함수들을 모아놓은 상자 (📦) 입니다.
-`UIKit`은 `UIView`, `UIButton`, `UILabel`, `UIImage` 등 UI 요소르 그려나가는데 필요한 것들으 제공하는 라이브러리 입니다.
+`UIKit`은 `UIView`, `UIButton`, `UILabel`, `UIImage` 등 UI 요소를 그려나가는데 필요한 것들을 제공하는 라이브러리 입니다.
 
 ```swift
 import UIKit
