@@ -105,3 +105,50 @@ if let notOptional = optional {   // optional값이 nil이 아니라면 그걸 n
 guard let notOptional = optional else { return }  // optional이 값이 있다면 그걸 notOptional 이라고 하고 아니면 즉각 리턴한다
 print(notOptional)                                // notOptional 출력
 ```
+## 함수
+수행하고자 하는 코드들의 집합체
+`func` (함수 이름)`(`파라미터`)` `{` 구현부(실행하고자 하는 코드) `}` 순으로 함수를 선언합니다.
+
+```swift
+func moveForward() {
+    distance = distance + 1 
+}
+
+// 파라미터(인풋) 이 있는 경우 파라미터는 (파라미터이름): (파라미터타입) 으로 선언
+func moveForward(step: Int) {
+    distance = distance + step
+}
+
+func jump() {
+    moveForward(step:3)
+}
+```
+
+## For~in
+반복되는 명령을 수행할 때
+`for` (각 요소에 대한 인덱스 이름) `in` (범위) `{` (실행하고자 하는 코드) `}`
+
+```swift
+// Before
+jump()
+jump()
+jump()
+
+// After
+for i in 1...3 {    //  i를 쓰지 않을 경우 _ 로 생략해도됨
+    jump()
+}
+```
+
+```swift
+let sports = ["Football", "Basketball", "Volleyball", "Golf"]
+
+print(sports[0])
+print(sports[1])
+print(sports[2])
+
+for i in 0...3 {    // i = 0, 1, 2, 3
+    // 반복되는 구문이 여기에
+    print(sports[i])
+}
+```
